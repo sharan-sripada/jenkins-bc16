@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11
-ARG JAR_FILE=/build/libs/organizationService-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} app.jar
+
+COPY ./build/libs/organizationService-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8081
 ENTRYPOINT ["java","-jar","app.jar"]
 
